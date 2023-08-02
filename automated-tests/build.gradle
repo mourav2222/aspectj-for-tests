@@ -10,7 +10,7 @@ version '1.0'
 sourceCompatibility = 1.8
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
@@ -19,8 +19,8 @@ dependencies {
     implementation "org.assertj:assertj-core:3.12.2"
     implementation "org.slf4j:slf4j-api:1.7.30"
     implementation "ch.qos.logback:logback-classic:1.2.3"
-    implementation "com.epam.reportportal:agent-java-testng:5.0.0-BETA-8"
-    implementation "com.epam.reportportal:logger-java-logback:5.0.0-BETA-8"
+//    implementation "com.epam.reportportal:agent-java-testng:5.0.0-BETA-8"
+//    implementation "com.epam.reportportal:logger-java-logback:5.0.0-BETA-8"
 }
 
 compileTestJava {
@@ -38,9 +38,9 @@ test {
     scanForTestClasses = false
     include "**/*Test.class"
 
-    options {
-        listeners = ['com.epam.reportportal.testng.ReportPortalTestNGListener'].toSet()
-    }
+//    options {
+//        listeners = ['com.epam.reportportal.testng.ReportPortalTestNGListener'].toSet()
+//    }
 
     testLogging {
         events "started", "passed", "failed", "skipped"

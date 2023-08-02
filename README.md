@@ -4,7 +4,7 @@ This is a simple example of how to use AspectJ to help you with logging the acti
 In order to run the Reminders application, make sure you have at least JDK 8 installed, then run the following command:
 ```
 cd reminders-app
-gradlew bootRun --args '--server.port=8000'
+gradlew bootRun --args='--server.port=8000'
 ```
 ## Run the tests
 Simply run the following command (make sure you have Google Chrome installed):
